@@ -1,12 +1,15 @@
+<?php 
+  # ============================ #
+  # Created By AstroLad / BamBam #
+  #   Open Source Applies Here   #
+  # ============================ #
+
+?>
+
+<?php
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-<!-- # ============================ # -->
-<!-- # Created By AstroLad / BamBam # -->
-<!-- #   Open Source Applies Here   # -->
-<!-- # ============================ # -->
-
-
 <head>
   <title>Aspergers Edition Z .::. Login System</title>
   <if:seo_enabled>
@@ -24,20 +27,17 @@
     <!--[if lt IE 7.]>
     <script defer type="text/javascript" src="http://www.bombed-away.info/jscript/pngfix.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="/jscript/ajax.js"></script>
-    <script type="text/javascript" src="/jscript/ajax-poller.js"></script>
-    <script type="text/javascript" src="/jscript/animatedcollapse.js"></script>
-    <script type="text/javascript" src="/jscript/xbtit.js"></script>
-    <script type="text/javascript" src="/jscript/jquery.js"></script>
-    <script type="text/javascript" src="/jscript/interface.js"></script>
-    <script type="text/javascript" src="/jscript/prototype.js"></script>
-    <script type="text/javascript" src="/jscript/overlib.js"></script>
-     <script src="/ajaxradio.js" language="JavaScript" type="text/javascript"></script>
-                    
-    <script type="text/javascript" src="/jscript/TorrentName.js"></script>
-    
-    <script language="JavaScript" src="/jscript/jq.js"></script>
-    <script language="JavaScript" src="/jscript/jq.color.js"></script>
+    <script type="text/javascript" src="/js/ajax.js"></script>
+    <script type="text/javascript" src="/js/ajax-poller.js"></script>
+    <script type="text/javascript" src="/js/animatedcollapse.js"></script>
+    <script type="text/javascript" src="/js/xbtit.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/interface.js"></script>
+    <script type="text/javascript" src="/js/prototype.js"></script>
+    <script type="text/javascript" src="/js/overlib.js"></script>
+    <script src="/js/ajaxradio.js" language="JavaScript" type="text/javascript"></script>      
+    <script language="JavaScript" src="/js/jq.js"></script>
+    <script language="JavaScript" src="/js/jq.color.js"></script>
     
 	<script type="text/javascript">
 
@@ -134,7 +134,7 @@ if (ie4up||ns6up){
 
 <body>
 
- <div>     
+ <div id='menu-bg'>     
   <table align="center" height="39" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td valign="middle" align="center" >	<div class="block">
@@ -312,3 +312,4 @@ window.location='index.php?page=usercp&uid=1&do=pm&action=list'
 </if:anon_enabled>
 </body>
 </html>
+?>
