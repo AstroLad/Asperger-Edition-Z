@@ -2,21 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Aspergers Edition Z .::. Login System</title>
-  <if:seo_enabled>
-  <tag:cano />
-  <tag:meta />
-  <tag:analytic />
-  <tag:ggwebmaster />
-  </if:seo_enabled>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" href="/style/FS-051/main.css" type="text/css" />
-
-  
-  
-	
-    <!--[if lt IE 7.]>
-    <script defer type="text/javascript" src="http://www.bombed-away.info/jscript/pngfix.js"></script>
-    <![endif]-->
     <script type="text/javascript" src="/jscript/ajax.js"></script>
     <script type="text/javascript" src="/jscript/ajax-poller.js"></script>
     <script type="text/javascript" src="/jscript/animatedcollapse.js"></script>
@@ -28,36 +15,21 @@
     <script type="text/javascript" src="/jscript/prototype.js"></script>
     <script type="text/javascript" src="/jscript/overlib.js"></script>
     <script src="/jscript/ajaxradio.js" language="JavaScript" type="text/javascript"></script>
-    
-	<script type="text/javascript">
+    <script type="text/javascript">
+     var snowsrc="/images/snow.gif"
+     var no = 10;
+     var hidesnowtime = 0;
+     var snowdistance = "pageheight";
+     var ie4up = (document.all) ? 1 : 0;
+     var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
 
-/******************************************
-* Snow Effect Script- By Altan d.o.o. (http://www.altan.hr/snow/index.html)
-* Visit Dynamic Drive DHTML code library (http://www.dynamicdrive.com/) for full source code
-* Last updated Nov 9th, 05' by DD. This notice must stay intact for use
-******************************************/
- 
-  //Configure below to change URL path to the snow image
-  var snowsrc="/images/snow.gif"
-  // Configure below to change number of snow to render
-  var no = 10;
-  // Configure whether snow should disappear after x seconds (0=never):
-  var hidesnowtime = 0;
-  // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
-  var snowdistance = "pageheight";
-
-///////////Stop Config//////////////////////////////////
-
-  var ie4up = (document.all) ? 1 : 0;
-  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
-
-    function iecompattest(){
-    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+     function iecompattest(){
+     return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
     }
 
-  var dx, xp, yp;    // coordinate and position variables
-  var am, stx, sty;  // amplitude and step variables
-  var i, doc_width = 800, doc_height = 600;
+     var dx, xp, yp;
+     var am, stx, sty;
+     var i, doc_width = 800, doc_height = 600;
  
   if (ns6up) {
     doc_width = self.innerWidth;
