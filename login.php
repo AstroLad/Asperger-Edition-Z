@@ -9,7 +9,7 @@
   <tag:ggwebmaster />
   </if:seo_enabled>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" href="http://www.bombed-away.info/style/FS-051/main.css" type="text/css" />
+  <link rel="stylesheet" href="/style/FS-051/main.css" type="text/css" />
 
   
   
@@ -17,20 +17,17 @@
     <!--[if lt IE 7.]>
     <script defer type="text/javascript" src="http://www.bombed-away.info/jscript/pngfix.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="http://www.bombed-away.info/jscript/ajax.js"></script>
-    <script type="text/javascript" src="http://www.bombed-away.info/jscript/ajax-poller.js"></script>
-    <script type="text/javascript" src="http://www.bombed-away.info/jscript/animatedcollapse.js"></script>
-    <script type="text/javascript" src="http://www.bombed-away.info/jscript/xbtit.js"></script>
-    <script type="text/javascript" src="http://www.bombed-away.info/jscript/jquery.js"></script>
-    <script type="text/javascript" src="http://www.bombed-away.info/jscript/interface.js"></script>
-    <script type="text/javascript" src="http://www.bombed-away.info/jscript/prototype.js"></script>
-    <script type="text/javascript" src="http://www.bombed-away.info/jscript/overlib.js"></script>
-     <script src="http://www.bombed-away.info/radiostats/ajaxradio.js" language="JavaScript" type="text/javascript"></script>
-                    
-    <script type="text/javascript" src="http://www.bombed-away.info/jscript/TorrentName.js"></script>
-    
-    <script language="JavaScript" src="http://www.bombed-away.info/jscript/jq.js"></script>
-    <script language="JavaScript" src="http://www.bombed-away.info/jscript/jq.color.js"></script>
+    <script type="text/javascript" src="/jscript/ajax.js"></script>
+    <script type="text/javascript" src="/jscript/ajax-poller.js"></script>
+    <script type="text/javascript" src="/jscript/animatedcollapse.js"></script>
+    <script type="text/javascript" src="/jscript/xbtit.js"></script>
+    <script language="JavaScript" src="/jscript/jq.js"></script>
+    <script language="JavaScript" src="/jq.color.js"></script>
+    <script type="text/javascript" src="/jscript/jquery.js"></script>
+    <script type="text/javascript" src="/jscript/interface.js"></script>
+    <script type="text/javascript" src="/jscript/prototype.js"></script>
+    <script type="text/javascript" src="/jscript/overlib.js"></script>
+    <script src="/jscript/ajaxradio.js" language="JavaScript" type="text/javascript"></script>
     
 	<script type="text/javascript">
 
