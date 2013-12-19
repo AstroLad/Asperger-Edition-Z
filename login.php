@@ -1,13 +1,12 @@
 <?php 
+
   # ============================ #
   # Created By AstroLad / BamBam #
   #   Open Source Applies Here   #
   # ============================ #
 
-?>
 
-<?php
-
+ $display = '
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -311,5 +310,7 @@ window.location='index.php?page=usercp&uid=1&do=pm&action=list'
   //--></script>
 </if:anon_enabled>
 </body>
-</html>
+</html>';
+
+         echo $display;
 ?>
