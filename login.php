@@ -6,11 +6,10 @@
   # ============================ #
 
 
- $display = '
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ $display = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Aspergers Edition Z .::. Login System</title>
+  <title>Edition Z | Login System</title>
   <if:seo_enabled>
   <tag:cano />
   <tag:meta />
@@ -19,13 +18,6 @@
   </if:seo_enabled>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" href="/css/05/main.css" type="text/css" />
-
-  
-  
-	
-    <!--[if lt IE 7.]>
-    <script defer type="text/javascript" src="http://www.bombed-away.info/jscript/pngfix.js"></script>
-    <![endif]-->
     <script type="text/javascript" src="/js/ajax.js"></script>
     <script type="text/javascript" src="/js/ajax-poller.js"></script>
     <script type="text/javascript" src="/js/animatedcollapse.js"></script>
@@ -129,11 +121,21 @@ if (ie4up||ns6up){
         setTimeout("hidesnow()", hidesnowtime*1000)
         }
 
-</script>    
-
+</script>
 <body>
 
- <div id='menu-bg'>     
+ <div id='menu-bg'>     <?php include_once('popup.php'); ?>
+ 
+ <div id="boxes">
+<div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window">
+<div style='margin-left:315px;margin-top:-30px;'>
+<a href="#" class="close"><img src='/images/closelabel.gif'></img></a> </div>
+</div>
+<!-- Mask to cover the whole screen -->
+<div style="width: 1478px; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
+</div>
+
+ 
   <table align="center" height="39" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td valign="middle" align="center" >	<div class="block">
@@ -145,10 +147,12 @@ if (ie4up||ns6up){
   
   <div class="block-content">
     	
-    <div align="justify" class="b-content" style='margin-left:1850px;margin-top:50px;'><div id='menu'>
-
+    <div align="justify" class="b-content" style='margin-left:180px;margin-top:-10px;'><div id='menu'>
+<div style='margin-left:330px;margin-top:12px;'>
 <ul class='level2'>
-<li><a href='index.php?page=viewnews'>News</a></li>
+<li><a href='index.php?page=viewnews'>New Features</a></li></ul></div>
+<div style='margin-left:130px;margin-top:-24px;'>
+<ul class='level2'><li><a href='#'>Screen Shots</a></li></ul></div>
 </ul>
 </div></div>
   </div>
@@ -210,21 +214,27 @@ window.location='index.php?page=usercp&uid=1&do=pm&action=list'
     </div>
 <div style='margin-top:-350px;'>	
 	<form action="index.php?page=login" name="login" method="post">
-    <table class="lista" border="0" width="100%" cellpadding="4" cellspacing="1">
+    <table border="0" width="100%" cellpadding="4" cellspacing="1">
     <tr>
-    <td class="lista" align="left">
+    <td align="left">
       <table border="0" cellpadding="0" cellspacing="0">
       <tr>
-      <td align="right" class="lista">User:</td>
-      <td class="lista" style="padding-left:5px;"><input type="text" size="15" name="uid" value="" maxlength="40" style="font-size:10px;" /></td>
-	  <td align="right" class="lista" style="padding-left:10px;">Password:</td>
-      <td class="lista" style="padding-left:5px;"><input type="password" size="15" name="pwd" maxlength="40" style="font-size:10px;" /></td>
-      <td class="lista" align="center" style="padding-left:10px;"><input type="submit" value="Login" style="font-size:10px;" /></td>
+      <td  style="padding-left:5px;">
+	  <div style='margin-left:-80px;margin-bottom:30px;'>
+	  <img width='20' height='20' src='/images/usera.png'/></div><div style='margin-top:-55px;margin-left:-60px;'>
+	  <input placeholder='Enter ID' type="text" size="15" name="uid" value="" maxlength="10" style="font-size:10px;" /></div></td>
+	  <td align="right"  style="padding-left:10px;">
+	  
+<div style='margin-top:-5px;margin-left:-5px;'>
+	 
+      <input placeholder='Enter Password' type="password" size="15" name="pwd" maxlength="40" style="font-size:10px;" /></div>
+      <td  align="center" style="padding-left:10px;"><div style='margin-top:-5px;'>
+	  <input type="submit" value="Login" style="font-size:10px;" /></div></td>
       </tr>
       </table>
            </td>
-<td style="text-align:center;" align="center"><a href="index.php?page=account ">Create account</a></td>
-    <td class="lista" align="center"><a class="mainuser"  href="index.php?page=recover">Recover password</a></td>
+<td style="text-align:center;"><div id='menu' style='margin-left:1157px;margin-top:-4px;'><ul class='level2'><a href="index.php?page=account ">Create account</a></ul></div></td>
+    <td style="text-align:center;"><div id='menu' style='margin-left:-3px;margin-top:-4px;'><ul class='level2'><a class="mainuser"  href="index.php?page=recover">Recover password</a></ul></div></td>
     </tr>
     </table>
     </form>	
@@ -244,14 +254,14 @@ window.location='index.php?page=usercp&uid=1&do=pm&action=list'
     </div>
   
   
-  <div id="bodyarea" style="padding:1ex 0 0 0;">  
+  <div id="bodyarea" style="padding:1ex 0 0 0;">  <br />
     <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
       <tr>
         <td valign="top" width="5" rowspan="2"></td>
         <if:HAS_LEFT><td id="lcol" valign="top" width="180"><tag:main_left /></td></if:HAS_LEFT>
         <td valign="top" width="5" rowspan="2"></td>
         <td id="mcol" valign="top">	<div class="block">
-  <div class="block-head">
+  <div class="block-head" style='width:550px; margin-top:-300px;margin-left:550px;'>
     
 	<div class="block-head-title">Donations For [Invitations] Accepted! - $0.67 Per Invites you want.</div>   
   </div>
@@ -288,13 +298,13 @@ window.location='index.php?page=usercp&uid=1&do=pm&action=list'
    </div></div>
 <table width="100%" height="46" align="center" cellpadding="0" cellspacing="0" border="0" >
 <tr>
-<div style='margin-top:339.5px;'>
-<td class="footbg" align="center" valign="middle">[&nbsp;&nbsp;<u>Design By</u>: <a href="https://github.com/AstroLad/Asperger-Edition-Z" target="_blank">AstroLad</a>&nbsp;&nbsp;]&nbsp;&nbsp;[&nbsp;&nbsp;<u>"Aspergers Edition Z" By</u>: <a href="https://github.com/AstroLad/" target="_blank">AstroLad54</a>&nbsp;]&nbsp;&nbsp;[&nbsp;&nbsp;<u>Customized By</u>: <a href="http://www.diemthuy.nl/" target="_blank">BamBam0077</a>&nbsp;]<br /></td>
+<div style='margin-top:545px;'>
+<td class="footbg" align="left" valign="middle">
+&nbsp; Created By: <a href="https://github.com/AstroLad/" target="_blank">AstroLad</a>&nbsp;&nbsp;&nbsp;"Aspergers Edition Z" &copy; 2013 ALL RIGHTS RESERVED.
+</td>
 </div>
 </tr>
 </table>
-
-
 
  </div>  
 
