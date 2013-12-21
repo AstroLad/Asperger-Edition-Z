@@ -1,148 +1,56 @@
 <?php 
 
-  # ============================ #
-  # Created By AstroLad / BamBam #
-  #   Open Source Applies Here   #
-  # ============================ #
+  # ============================ # # ================================================================ #  
+  # # Aspergers Edition Z v0.5 # # # THIS SOURCE IS FULLY CUSTOM.                                     #
+  # ============================ # # THIS SOURCE MAY APPEAR TO BE USING OTHER SOURCES CODE TRUE.      #
+  #     Created By AstroLad      # # THIS SOURCE CAN BE EDITED BY YOU 100% TRUE.                      #
+  #     Plugins By AstroLad      # # THIS SOURCE CAN BE CLONED & REUSED FOR ANY LEARNING PURPOSES.    #
+  #   Open Source Applies Here   # # THIS SOURCE IS NOT RESPONSIBLE FOR THE OUTPUT A CLIENT PRODUCES. # 
+  # ============================ # # ================================================================ #
 
 
  $display = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Edition Z | Login System</title>
-  <if:seo_enabled>
-  <tag:cano />
-  <tag:meta />
-  <tag:analytic />
-  <tag:ggwebmaster />
-  </if:seo_enabled>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" href="/css/05/main.css" type="text/css" />
-    <script type="text/javascript" src="/js/ajax.js"></script>
-    <script type="text/javascript" src="/js/ajax-poller.js"></script>
-    <script type="text/javascript" src="/js/animatedcollapse.js"></script>
-    <script type="text/javascript" src="/js/xbtit.js"></script>
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/interface.js"></script>
-    <script type="text/javascript" src="/js/prototype.js"></script>
-    <script type="text/javascript" src="/js/overlib.js"></script>
-    <script src="/js/ajaxradio.js" language="JavaScript" type="text/javascript"></script>      
-    <script language="JavaScript" src="/js/jq.js"></script>
-    <script language="JavaScript" src="/js/jq.color.js"></script>
-    
-	<script type="text/javascript">
-
-/******************************************
-* Snow Effect Script- By Altan d.o.o. (http://www.altan.hr/snow/index.html)
-* Visit Dynamic Drive DHTML code library (http://www.dynamicdrive.com/) for full source code
-* Last updated Nov 9th, 05' by DD. This notice must stay intact for use
-******************************************/
+             <html xmlns="http://www.w3.org/1999/xhtml">
+             <head>
+             <title>Aspergers Edition Z | Login System</title>
+             <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+             <link rel="stylesheet" href="/css/05/main.css" type="text/css" />
+             <script type="text/javascript" src="/js/custom_ajax.js"></script>
+             <script type="text/javascript" src="/js/jquery.js"></script>
+             <script type="text/javascript" src="/js/interface.js"></script>
+             <script type="text/javascript" src="/js/prototype.js"></script>
+             <script type="text/javascript" src="/js/custom_plugin.js"></script>
+             /*Remember that last script will be our season mode code*/
+             </head>
+             <body>
+             
+              <?php 
+              
+              # Cleanest way I could show you how to use basic php
+              # We will also include some mysql next update 0.6.
+              # ~ AstroLad ~
+              
+               # Quick Way!
+                include_once('popup.php');
+               # Only when require_once is not the case.    
+               ?>
+             
+             
+             <div id="menu-bg"> 
  
-  //Configure below to change URL path to the snow image
-  var snowsrc="/images/snow.gif"
-  // Configure below to change number of snow to render
-  var no = 10;
-  // Configure whether snow should disappear after x seconds (0=never):
-  var hidesnowtime = 0;
-  // Configure how much snow should drop down before fading ("windowheight" or "pageheight")
-  var snowdistance = "pageheight";
-
-///////////Stop Config//////////////////////////////////
-
-  var ie4up = (document.all) ? 1 : 0;
-  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
-
-    function iecompattest(){
-    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
-    }
-
-  var dx, xp, yp;    // coordinate and position variables
-  var am, stx, sty;  // amplitude and step variables
-  var i, doc_width = 800, doc_height = 600;
- 
-  if (ns6up) {
-    doc_width = self.innerWidth;
-    doc_height = self.innerHeight;
-  } else if (ie4up) {
-    doc_width = iecompattest().clientWidth;
-    doc_height = iecompattest().clientHeight;
-  }
-
-  dx = new Array();
-  xp = new Array();
-  yp = new Array();
-  am = new Array();
-  stx = new Array();
-  sty = new Array();
-  snowsrc=(snowsrc.indexOf("dynamicdrive.com")!=-1)? "snow.gif" : snowsrc
-  for (i = 0; i < no; ++ i) {  
-    dx[i] = 0;                        // set coordinate variables
-    xp[i] = Math.random()*(doc_width-50);  // set position variables
-    yp[i] = Math.random()*doc_height;
-    am[i] = Math.random()*20;         // set amplitude variables
-    stx[i] = 0.02 + Math.random()/10; // set step variables
-    sty[i] = 0.7 + Math.random();     // set step variables
-        if (ie4up||ns6up) {
-      if (i == 0) {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='"+snowsrc+"' border=\"0\"><\/a><\/div>");
-      } else {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
-      }
-    }
-  }
-
-  function snowIE_NS6() {  // IE and NS6 main animation function
-    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
-        doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
-    for (i = 0; i < no; ++ i) {  // iterate for every dot
-      yp[i] += sty[i];
-      if (yp[i] > doc_height-50) {
-        xp[i] = Math.random()*(doc_width-am[i]-30);
-        yp[i] = 0;
-        stx[i] = 0.02 + Math.random()/10;
-        sty[i] = 0.7 + Math.random();
-      }
-      dx[i] += stx[i];
-      document.getElementById("dot"+i).style.top=yp[i]+"px";
-      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
-    }
-    snowtimer=setTimeout("snowIE_NS6()", 10);
-  }
-
-    function hidesnow(){
-        if (window.snowtimer) clearTimeout(snowtimer)
-        for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
-    }
-        
-
-if (ie4up||ns6up){
-    snowIE_NS6();
-        if (hidesnowtime>0)
-        setTimeout("hidesnow()", hidesnowtime*1000)
-        }
-
-</script>
-<body>
-
- <div id='menu-bg'>     <?php include_once('popup.php'); ?>
- 
- <div id="boxes">
-<div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window">
-<div style='margin-left:315px;margin-top:-30px;'>
-<a href="#" class="close"><img src='/images/closelabel.gif'></img></a> </div>
-</div>
-<!-- Mask to cover the whole screen -->
-<div style="width: 1478px; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
-</div>
-
- 
-  <table align="center" height="39" cellpadding="0" cellspacing="0" border="0">
-      <tr>
-        <td valign="middle" align="center" >	<div class="block">
-  <div class="block-head">
-    
-	<div class="block-head-title"></div>   
-  </div>
+              <div id="boxes">
+              <div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window">
+              <div style="margin-left:315px;margin-top:-30px;">
+              <a href="#" class="close"><img src="/images/closelabel.gif"></img></a> </div>
+              </div>
+              <div style="width: 1478px; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
+              </div>
+              <table align="center" height="39" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+              <td valign="middle" align="center" ><div class="block">
+              <div class="block-head">
+              <div class="block-head-title"></div>   
+              </div>
 
   
   <div class="block-content">
