@@ -1,12 +1,12 @@
 <?php 
 
-  # ============================ # # ================================================================ #  
-  # # Aspergers Edition Z v0.5 # # # THIS SOURCE IS FULLY CUSTOM.                                     #
-  # ============================ # # THIS SOURCE MAY APPEAR TO BE USING OTHER SOURCES CODE TRUE.      #
-  #     Created By AstroLad      # # THIS SOURCE CAN BE EDITED BY YOU 100% TRUE.                      #
-  #     Plugins By AstroLad      # # THIS SOURCE CAN BE CLONED & REUSED FOR ANY LEARNING PURPOSES.    #
-  #   Open Source Applies Here   # # THIS SOURCE IS NOT RESPONSIBLE FOR THE OUTPUT A CLIENT PRODUCES. # 
-  # ============================ # # ================================================================ #
+         # ============================ # # ================================================================ #  
+         # # Aspergers Edition Z v0.5 # # # THIS SOURCE IS FULLY CUSTOM.                                     #
+         # ============================ # # THIS SOURCE MAY APPEAR TO BE USING OTHER SOURCES CODE TRUE.      #
+         #     Created By AstroLad      # # THIS SOURCE CAN BE EDITED BY YOU 100% TRUE.                      #
+         #     Plugins By AstroLad      # # THIS SOURCE CAN BE CLONED & REUSED FOR ANY LEARNING PURPOSES.    #
+         #   Open Source Applies Here   # # THIS SOURCE IS NOT RESPONSIBLE FOR THE OUTPUT A CLIENT PRODUCES. # 
+         # ============================ # # ================================================================ #
 
 
  $display = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
